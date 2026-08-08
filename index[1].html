@@ -1,0 +1,212 @@
+<!doctype html>
+<html amp lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta name="description" content="ELOKTOTO AMP Demo dengan tampilan responsif, ringan, dan mudah digunakan.">
+  <meta name="theme-color" content="#050505">
+  <title>ELOKTOTO - AMP Demo</title>
+  <link rel="canonical" href="https://example.com/">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+  <style amp-boilerplate>
+    body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}
+    @-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+    @keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+  </style>
+  <noscript>
+    <style amp-boilerplate>
+      body{-webkit-animation:none;animation:none}
+    </style>
+  </noscript>
+
+  <style amp-custom>
+    *{box-sizing:border-box}
+    html{background:#050505}
+    body{
+      margin:0;
+      background:#050505;
+      color:#fff;
+      font-family:Arial,Helvetica,sans-serif;
+    }
+    .wrap{
+      width:100%;
+      max-width:1100px;
+      margin:0 auto;
+      padding:12px;
+    }
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:10px 0 14px;
+      border-bottom:1px solid #8d6500;
+    }
+    .brand{
+      display:inline-block;
+      text-decoration:none;
+      font-weight:900;
+      font-size:26px;
+      letter-spacing:-1.5px;
+      color:#ffc400;
+      text-shadow:2px 2px 0 #a00000;
+    }
+    .nav{display:none}
+    .actions{display:flex;gap:7px}
+    a:focus-visible{outline:2px solid #fff;outline-offset:3px}
+    .btn{
+      display:inline-block;
+      padding:10px 15px;
+      border-radius:9px;
+      border:1px solid #d99d00;
+      text-decoration:none;
+      font-weight:800;
+      font-size:12px;
+      color:#fff;
+      background:#0b0b0b;
+    }
+    .btn.primary{background:#ffc400;color:#111}
+    .hero{
+      margin-top:12px;
+      border:1px solid #7c5900;
+      border-radius:14px;
+      overflow:hidden;
+      background:#0a0a0a;
+    }
+    .hero img{display:block;width:100%;height:auto}
+    .section{
+      margin-top:12px;
+      padding:18px 14px;
+      border:1px solid #745300;
+      border-radius:14px;
+      background:linear-gradient(180deg,#111 0%,#070707 100%);
+    }
+    .section h2{
+      margin:0 0 12px;
+      text-align:center;
+      font-size:21px;
+      color:#ffc400;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:9px;
+    }
+    .card{
+      padding:14px 8px;
+      border:1px solid #745300;
+      border-radius:10px;
+      text-align:center;
+      background:#0c0c0c;
+    }
+    .icon{font-size:25px;margin-bottom:6px}
+    .card strong{display:block;font-size:12px}
+    .card span{display:block;margin-top:4px;color:#ddd;font-size:10px;line-height:1.4}
+    .cta{
+      display:block;
+      margin:14px auto 0;
+      max-width:330px;
+      text-align:center;
+      padding:14px;
+      border-radius:12px;
+      background:#ffc400;
+      color:#111;
+      font-weight:900;
+      text-decoration:none;
+    }
+    .steps{display:grid;gap:10px}
+    .step{
+      display:flex;
+      min-height:58px;
+      gap:12px;
+      align-items:center;
+      padding:10px;
+      border-bottom:1px solid #332600;
+    }
+    .num{
+      flex:0 0 38px;
+      min-width:38px;height:38px;border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      background:#ffc400;color:#111;font-weight:900;
+    }
+    .footer{
+      margin-top:14px;
+      padding:20px 12px;
+      border-top:1px solid #765400;
+      text-align:center;
+      color:#aaa;
+      font-size:11px;
+    }
+    @media (min-width:700px){
+      .wrap{padding:18px}
+      .nav{display:flex;gap:18px;font-size:12px;font-weight:700}
+      .nav a{color:#fff;text-decoration:none}
+      .nav a.active{color:#ffc400}
+      .brand{font-size:34px}
+      .grid{grid-template-columns:repeat(3,1fr)}
+      .hero{border-radius:18px}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="ELOKTOTO Beranda">ELOKTOTO</a>
+
+      <nav class="nav">
+        <a class="active" href="#home">BERANDA</a>
+        <a href="#produk">SLOT</a>
+        <a href="#casino">LIVE CASINO</a>
+        <a href="#sports">SPORTS</a>
+        <a href="#promo">PROMO</a>
+        <a href="#panduan">PANDUAN</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn" href="#masuk">MASUK</a>
+        <a class="btn primary" href="#daftar">DAFTAR</a>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <amp-img
+          src="assets/reference.png"
+          width="1536"
+          height="2048"
+          layout="responsive"
+          alt="Pratinjau tampilan landing page ELOKTOTO"
+        </amp-img>
+      </section>
+
+      <section class="section" id="produk">
+        <h2>FITUR UTAMA</h2>
+        <div class="grid">
+          <div class="card"><div class="icon">🛡️</div><strong>AMAN & TERPERCAYA</strong><span>Informasi layanan dan keamanan.</span></div>
+          <div class="card"><div class="icon">⚡</div><strong>PROSES CEPAT</strong><span>Tampilan sederhana dan ringan.</span></div>
+          <div class="card"><div class="icon">🎧</div><strong>LAYANAN</strong><span>Dukungan untuk pengguna.</span></div>
+          <div class="card"><div class="icon">🔐</div><strong>SISTEM TERJAGA</strong><span>Gunakan koneksi yang aman.</span></div>
+          <div class="card"><div class="icon">📱</div><strong>RESPONSIVE</strong><span>Nyaman di berbagai ukuran layar.</span></div>
+          <div class="card"><div class="icon">✓</div><strong>FAIR PLAY</strong><span>Gunakan layanan secara bertanggung jawab.</span></div>
+        </div>
+      </section>
+
+      <section class="section" id="panduan">
+        <h2>3 LANGKAH MUDAH</h2>
+        <div class="steps">
+          <div class="step"><div class="num">1</div><div><strong>DAFTAR</strong><br><small>Isi informasi yang diperlukan.</small></div></div>
+          <div class="step"><div class="num">2</div><div><strong>AKSES</strong><br><small>Pilih layanan yang tersedia.</small></div></div>
+          <div class="step"><div class="num">3</div><div><strong>GUNAKAN</strong><br><small>Nikmati tampilan yang responsif.</small></div></div>
+        </div>
+        <a class="cta" href="#daftar">BUKA HALAMAN</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      © 2026 ELOKTOTO — AMP Demo
+    </footer>
+  </div>
+</body>
+</html>
